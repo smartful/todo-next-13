@@ -10,6 +10,8 @@
 
 .header ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .header h1 a {
@@ -25,7 +27,12 @@
 }
 
 .header ul li a:hover {
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 10px;
   background-color: #555;
+}
+
+.header ul li a.textActive {
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
 }
