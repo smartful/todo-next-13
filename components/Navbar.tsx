@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './navbar.module.css';
@@ -13,6 +14,16 @@ const sections = [
     id: 2,
     name: 'Profile',
     href: '/profile',
+  },
+  {
+    id: 3,
+    name: 'Log In',
+    href: '/login',
+  },
+  {
+    id: 4,
+    name: 'Sign Up',
+    href: '/signup',
   },
 ];
 
