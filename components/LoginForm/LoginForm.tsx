@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import styles from './loginForm.module.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +14,7 @@ const LoginForm = () => {
   };
 
   return (
-    <form onClick={handleSubmit}>
+    <form onClick={handleSubmit} className={styles.loginForm}>
       <input type="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <input
         type="password"

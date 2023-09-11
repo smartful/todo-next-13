@@ -1,0 +1,21 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.loginForm input {
+  height: 25px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.loginForm button {
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+}
