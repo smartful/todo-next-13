@@ -1,14 +1,14 @@
 .loginForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 70%;
+  gap: 20px;
+  width: 300px;
 }
 
 .loginForm input {
   height: 25px;
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px;
 }
 
 .loginForm button {
@@ -18,4 +18,5 @@
   padding: 5px;
   color: white;
   background-color: blue;
+  border: none;
 }
