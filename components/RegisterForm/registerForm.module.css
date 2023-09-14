@@ -1,0 +1,31 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+.registerForm input {
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.registerForm button {
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+  border: none;
+}
+
+.registerError {
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
