@@ -27,7 +27,9 @@ const LoginForm = () => {
         return;
       }
 
-      router.replace('dashboard');
+      console.log('res : ', res);
+
+      router.replace('tasks');
     } catch (error) {
       console.log('Login submit error : ', error);
     }

@@ -1,8 +1,8 @@
 import NextAuth from 'next-auth/next';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
-import { connectMongoDB } from '../../../lib/mongodb';
-import User from '../../../models/user';
+import { connectDB } from '@/app/lib/mongodb';
+import User from '@/app/models/user';
 
 export const authOptions = {
   providers: [
@@ -12,7 +12,7 @@ export const authOptions = {
       async authorize(credentials) {
         const { email, password } = credentials;
         try {
-          await connectMongoDB();
+          await connectDB();
           const user = await User.findOne({ email });
 
           if (!user) {
